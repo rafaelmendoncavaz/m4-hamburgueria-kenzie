@@ -1,0 +1,63 @@
+%basecolor {
+  -webkit-font-smoothing: antialiased;
+  &.primary {
+    color: $primary-color;
+  }
+  &.secondary {
+    color: $secondary-color;
+  }
+  &.gray-100 {
+    color: $gray-100;
+  }
+  &.gray-200 {
+    color: $gray-200;
+  }
+  &.gray-300 {
+    color: $gray-300;
+  }
+  &.gray-400 {
+    color: $gray-400;
+  }
+  &.gray-600 {
+    color: $gray-600;
+  }
+}
+
+.title-1 {
+  @extend %basecolor;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.title-2 {
+  @extend %basecolor;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.title-3 {
+  @extend %basecolor;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.headline {
+  @extend %basecolor;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.body {
+  @extend %basecolor;
+  font-size: 1.4rem;
+  font-weight: normal;
+  &.semibold {
+    font-weight: 600;
+  }
+}
+
+.caption {
+  @extend %basecolor; 
+  font-size: 1.2rem; 
+  font-weight: normal;
+} 

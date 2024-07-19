@@ -1,0 +1,21 @@
+.button {
+  padding: 0 2rem;
+  height: 4rem;
+  border: solid 1px transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-align: center;
+  background: linear-gradient(.25turn, $gray-300, 10%, $gray-400);
+  transition: .3s;
+  &:hover {
+    background: linear-gradient(.25turn, $primary-color, 66%, #34dd7b);
+  }
+
+}
+
+.focused {
+  &:focus {
+    background: linear-gradient(.25turn, $primary-color, 66%, #34dd7b);
+  }
+}

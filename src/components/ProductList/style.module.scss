@@ -1,0 +1,35 @@
+@import "../../styles/global.scss";
+
+.listContainer {
+  max-width: 1024px;
+  margin: 20px auto;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  li {
+    flex: 0 0 auto;
+    &:focus {
+      border: 2px solid $primary-color;
+    }
+    &:hover {
+      border: 2px solid $primary-color;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .listContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 540px) {
+  .listContainer {
+    display: flex;    
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

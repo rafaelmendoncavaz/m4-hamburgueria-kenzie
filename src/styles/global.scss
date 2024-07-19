@@ -1,0 +1,25 @@
+$primary-color: #27AE60;
+$secondary-color: #EB5757;
+$gray-600: #333333;
+$gray-400: #828282;
+$gray-300: #BDBDBD;
+$gray-200: #E0E0E0; 
+$gray-100: #F5F5F5;
+  
+:root {
+  font-size: 62.5%
+
+}
+  
+body {
+  height: 100vh;
+  background: linear-gradient(180deg, $gray-100, $gray-200);
+  box-sizing: border-box;
+
+} 
+
+body, button, input { 
+  font-family: "Inter", sans-serif;
+
+}
+
